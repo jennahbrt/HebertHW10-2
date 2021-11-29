@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "cp_and_chmod running"
+echo "coping read_button to /usr/local/bin/"
+cp read_button /usr/local/bin/
+echo "coping cgi file to /usr/lib/cgi-bin"
+cp read_button.cgi /usr/lib/cgi-bin
+echo "copied"
+echo "changing persmissions"
+chmod ugo+x /usr/lib/cgi-bin/read_button.cgi
+echo "permissions changed. run script by going to 192.168.7.2:8080/cgi-bin/read_button.cgi"
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Building read_button.cpp" 
+config-pin -a p8.16 in+ 
+g++ GPIO.cpp read_button.cpp -o read_button -pthread -lcgicc
+echo "Build complete"
+
